@@ -12,5 +12,6 @@ It is 4 hours project (2 hours for initiation. 2 hours for improvement.)
 * Automatically update canvas when any option is changed
 * Changeable text
 * Adjustable font size and overlay opacity
+
 ### Can I use your code elsewhere ?
 Yes, feel free to use the code in any way you want :)
