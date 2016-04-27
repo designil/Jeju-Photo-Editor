@@ -122,14 +122,13 @@ for(var i=0; i<opInputs.length; i++) {
 // Detect Uplaod Image
 var uploadInput = getID('uploadinput');
 uploadInput.addEventListener('change', function() {
-  console.log('update');
   drawJeju();
 });
 
 // Download Image
 var uploadInput = getID('download');
 uploadInput.addEventListener('click', function() {
-  ga('send', 'event', 'Click', 'Download Jeju');
+  // ga('send', 'event', 'Click', 'Download Jeju');
   var dataURL = getID('jeju').toDataURL();
   window.open(dataURL);
 });
