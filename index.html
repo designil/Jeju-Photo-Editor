@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jeju Editor - ทำรูปสไตล์เจ๊จูในรูปแบบของคุณเอง" />
+    <meta property="og:description" content="ทำรูปสไตล์เจ๊จู แค่อัพโหลด และพิมพ์ข้อความ" />
+    <meta property="og:url" content="http://www.designil.com/jeju/" />
+    <meta property="og:site_name" content="Jeju Editor" />
+    <meta property="fb:app_id" content="638661609556144" />
+    <meta property="og:image" content="http://i.imgur.com/M16g3mk.png" />
+    <title>Jeju Editor - ทำรูปสไตล์เจ๊จูในรูปแบบของคุณเอง</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+
+    <div class="logo-wrapper">
+      <div class="page-wrapper">
+        <a href="http://www.designil.com" title="สอนเว็บดีไซน์ HTML CSS">
+          <img src="http://www.designil.com/wp-content/uploads/2014/05/logo-thai3.png" alt="">
+        </a>
+        <div class="head-note">
+          Jeju Editor - สร้างรูปสไตล์​เจ๊จูในรูปแบบของคุณเอง
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+      <div class="canvas-wrapper">
+        <canvas id="jeju" width="1024" height="1024"></canvas>
+      </div>
+      
+
+      <div class="button-row">
+        <label for="uploadinput" id="upload">อัพโหลดรูป
+        <input type="file" id="uploadinput" accept="image/*" /></label> (JPG หรือ PNG ขนาดแนะนำ: 1024x1024 px)
+      </div>
+      <div class="row">
+        <div class="col-left">
+          บรรทัดที่ 1: <input type="text" id="line1" value="ข้างนอกสุกใส" />
+        </div>
+        <div class="col-right">
+          ขนาดตัวหนังสือ 1: <div class="slider-wrap"><em>10px</em> <input type="range" min="10" max="200" value="182" id="font1" step="1"> <em>200px</em></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-left">
+          บรรทัดที่ 2: <input type="text" id="line2" value="ข้างในเป็น WordPress" />
+        </div>
+        <div class="col-right">
+          ขนาดตัวหนังสือ 2: <div class="slider-wrap"><em>10px</em> <input type="range" min="10" max="200" value="122" id="font2" step="1"> <em>200px</em></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-left">
+          บรรทัดที่ 3: <input type="text" id="line3" value="(เจ้แทน รับดูแลเว็บไซต์ 08X XXX XXXX)" />
+        </div>
+        <div class="col-right">
+          ขนาดตัวหนังสือ 3: <div class="slider-wrap"><em>10px</em> <input type="range" min="10" max="200" value="80" id="font3" step="1"> <em>200px</em></div>
+        </div>
+      </div>
+      <hr>
+      ความโปร่งใสรูป: <div class="slider-wrap"><em>0 (ทึบ)</em> <input type="range" min="0" max="100" value="20" id="imgopacity" step="1"> <em>100 (โปร่ง)</em></div>
+      <hr>
+      
+      <div class="button-row">
+        <a href="#" id="download">ดาวน์โหลดรูป</a>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Jeju Ads -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2871842780630283"
+             data-ad-slot="6922535970"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="changelog">
+        <pre>
+          Version 0.9 - เพิ่มระบบปรับความโปร่งใสรูป, ปรับขนาดตัวหนังสือ
+          Version 0.5 - เพิ่มระบบ scale รูปอัตโนมัติ, Import ฟ้อนต์
+          Version 0.1 - ไปกินข้าวแพรพฮะ เดี๋ยวมาตกแต่ง + เพิ่มฟีเจอร์ (@designil)
+        </pre>
+
+        <p class="credit-note">
+          รับทำเว็บไซต์ ออกแบบเว็บไซต์ สนใจติดต่อ <a href="http://www.designil.com">Designil.com</a>
+        </p>
+
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12208171-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </body>
+</html>
